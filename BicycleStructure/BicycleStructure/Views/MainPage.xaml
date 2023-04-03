@@ -10,7 +10,7 @@
     </ContentPage.BindingContext>
     
     <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="info.png"/>
+        <ToolbarItem IconImageSource="info.png" Command="{Binding OpenAboutPageCommand}"/>
     </ContentPage.ToolbarItems>
     
     <StackLayout>

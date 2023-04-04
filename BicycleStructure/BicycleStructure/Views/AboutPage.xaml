@@ -1,14 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BicycleStructure.Views.AboutPage">
-    
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="BicycleStructure.Views.AboutPage"
+             Title="About">
+
+    <StackLayout Margin="20">
+        
+        <Image Source="app_icon" HeightRequest="100" Margin="0,50,0,0"/>
+        <Label Text="Bicycle Structure" HorizontalTextAlignment="Center" FontSize="24" TextColor="Black" Margin="0,20,0,0"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,5,0,0">
+            <Label Text="Version" FontSize="16" TextColor="Black"/>
+            <Label Text="0.1.042023" FontSize="16" TextColor="Black"/>
         </StackLayout>
-    </ContentPage.Content>
+
+        <Button Margin="40,40,40,0" Text="GitHub" CornerRadius="10"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"/>
+        <Button Margin="40,20,40,0" Text="Documentation" CornerRadius="10"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+        <Button Margin="40,20,40,0" Text="Issues" CornerRadius="10"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+        
+    </StackLayout>
     
 </ContentPage>

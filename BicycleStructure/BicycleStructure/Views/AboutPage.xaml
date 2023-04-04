@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BicycleStructure.ViewModels"
              x:Class="BicycleStructure.Views.AboutPage"
-             Title="About">
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:AboutPageViewModel/>
+    </ContentPage.BindingContext>
 
     <StackLayout Margin="20">
         
@@ -10,18 +15,18 @@
         <Label Text="Bicycle Structure" HorizontalTextAlignment="Center" FontSize="24" TextColor="Black" Margin="0,20,0,0"/>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,5,0,0">
             <Label Text="Version" FontSize="16" TextColor="Black"/>
-            <Label Text="0.1.042023" FontSize="16" TextColor="Black"/>
+            <Label Text="{Binding VersionApp}" FontSize="16" TextColor="Black"/>
         </StackLayout>
 
         <Button Margin="40,40,40,0" Text="GitHub" CornerRadius="10"
                         BackgroundColor="{StaticResource Primary}"
-                        TextColor="White"/>
+                        TextColor="White" Command="{Binding OpenGitHubCommand}"/>
         <Button Margin="40,20,40,0" Text="Documentation" CornerRadius="10"
                         BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
+                        TextColor="White" Command="{Binding OpenDocumentationCommand}"/>
         <Button Margin="40,20,40,0" Text="Issues" CornerRadius="10"
                         BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
+                        TextColor="White" Command="{Binding OpenIssuesCommand}"/>
         
     </StackLayout>
     

@@ -13,7 +13,7 @@ namespace BicycleStructure.ViewModels
             VersionApp = "0.1.042023";
 
             OpenGitHubCommand = new Command(async () => await Browser.OpenAsync("https://github.com/Cyclist-code/BicycleStructure"));
-            OpenDocumentationCommand = new Command(async () => await Browser.OpenAsync("https://github.com/Cyclist-code/BicycleStructure"));
+            OpenDocumentationCommand = new Command(async () => await Browser.OpenAsync("https://github.com/Cyclist-code/BicycleStructure/blob/master/README.md"));
             OpenIssuesCommand = new Command(async () => await Browser.OpenAsync("https://github.com/Cyclist-code/BicycleStructure/issues"));
         }
 

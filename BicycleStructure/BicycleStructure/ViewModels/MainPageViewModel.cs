@@ -17,12 +17,12 @@ namespace BicycleStructure.ViewModels
 
             _bicycleStructures = new ObservableCollection<BicycleStructureModel>
             {
-                new BicycleStructureModel { Title = "Bicycle Structure", Description = "Brief information for beginners", ImagePath = "BicycleStructure.Images.bike.jpg" },
-                new BicycleStructureModel { Title="Frame", Description="", ImagePath="BicycleStructure.Images.frame.jpg" },
-                new BicycleStructureModel { Title="Fork", Description="", ImagePath="BicycleStructure.Images.fork.jpg" },
-                new BicycleStructureModel { Title="Wheels", Description="", ImagePath="BicycleStructure.Images.wheels.jpg" },
-                new BicycleStructureModel { Title="Brakes", Description="", ImagePath="BicycleStructure.Images.brakes.jpg" },
-                new BicycleStructureModel { Title="Transmission", Description="", ImagePath="BicycleStructure.Images.transmission.jpg" }
+                new BicycleStructureModel { Title = "Bicycle Structure", Description = "Brief information for beginners", ImagePath = "bike.jpg" },
+                new BicycleStructureModel { Title="Frame", Description="Frame material: aluminum, steel, titanium and carbon.", ImagePath="frame.jpg" },
+                new BicycleStructureModel { Title="Fork", Description="Main types: rigid and shock-absorbing.", ImagePath="fork.jpg" },
+                new BicycleStructureModel { Title="Wheels", Description="Components of the wheel: tire, rim, nipple. camera, bushing and spokes.", ImagePath="wheels.jpg" },
+                new BicycleStructureModel { Title="Brakes", Description="Types of brakes: rim brakes and disc brakes.", ImagePath="brakes.jpg" },
+                new BicycleStructureModel { Title="Transmission", Description="Transmission components: connecting rods, carriage, cassette, chain, switches and shifters.", ImagePath="transmission.jpg" }
             };
         }
 
